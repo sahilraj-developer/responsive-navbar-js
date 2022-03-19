@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="nav-logo">
+          <h1>logo</h1>
+        </div>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">about</a></li>
+            <li><a href="">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <script>
+      // points
+          // select hamburger
+          const hamburger = document.querySelector('.hamburger')
+          // select nav-menu
+          const navMenu = document.querySelector('.nav-menu')
+          // add event listner
+          hamburger.addEventListener('click', mobileMenu)
+
+          // navmenu function
+          //   toogle active
+          // toggle active
+
+          function mobileMenu(){
+              hamburger.classList.toggle('active')
+              navMenu.classList.toggle('active')
+          }
+    </script>
+  </body>
+</html>
